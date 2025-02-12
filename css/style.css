@@ -363,6 +363,7 @@ button {
   padding: 1rem;
 }
 .wrap-3 .works .work-item {
+  max-height: 250px;
   border: 1px solid #ccc;
   border-radius: 15px;
   position: relative;
