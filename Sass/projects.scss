@@ -24,14 +24,18 @@
 
     .work-buttons {
         margin: 2rem 0;
+        border: 2px solid #2b2626;
 
+        border-radius: 10px;
         .work-btn {
-            width: 70%;
-            background-color: #1f1c1c;
-            color: #fff;
             padding: 0.5rem 1rem;
+            width: 70%;
+            background-color: transparent;
+            color: #fff;
+           
             font-size: 1.5rem;
-            border-right: 1px solid #fff;
+            border-right: 1px solid #121010;
+            
             cursor: pointer;
             transition: all 0.3s;
 

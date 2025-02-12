@@ -1,0 +1,94 @@
+
+.wrap-4 {
+    padding: 4rem 0 1rem 0;
+    text-align: center;
+
+    .heading {
+        text-align: center;
+        padding: 2rem 0;
+        margin-bottom: 1rem;
+
+        p {
+            font-size: 20px;
+            margin: 0.5rem 0;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+    }
+
+    .input {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        margin: 1rem 0;
+        border-width: 1px;
+        border-radius: 10px;
+        background-color: antiquewhite;
+        font-size: 1.5rem;
+        border-top: 2px solid #d70808;
+        border-left: 2px solid #d70808;
+        border-right: 2px solid #0000ff;
+        border-bottom: 2px solid #0909e9;
+        outline: none;
+
+
+    }
+
+    .message {
+
+        min-height: 6rem;
+        width: 100%;
+        padding: 0.5rem 1rem;
+        margin: 1rem 0;
+        border-width: 1px;
+        border-radius: 10px;
+        background-color: antiquewhite;
+        font-size: 1.5rem;
+        border-top: 2px solid #d70808;
+        border-left: 2px solid #d70808;
+        border-right: 2px solid #0000ff;
+        border-bottom: 2px solid #0909e9;
+        outline: none;
+    }
+
+    .contact-btn {
+        padding: 0.5rem 1rem;
+        width: fit-content;
+        background-color: antiquewhite;
+        font-size: 1.5rem;
+        border-top: 2px solid #d70808;
+        border-left: 2px solid #d70808;
+        border-right: 2px solid #0000ff;
+        border-bottom: 2px solid #0909e9;
+        cursor: pointer;
+        border-radius: 1rem;
+        transition: all 0.3s;
+
+        &:hover {
+            background:linear-gradient(to right, #ff105f, #ffad06);
+            font-size: 1.5rem;
+            color: #fff;
+            border-right: 2px solid #d70808;
+            border-bottom: 2px solid #d70808;
+            border-top: 2px solid #0000ff;
+            border-left: 2px solid #0909e9;
+        }
+    }
+
+    .heading2{
+        margin-top: 6rem;
+
+        text-align: center;
+        #programmers
+        {
+            height: 6rem;
+            width: 100%;
+        }
+    }
+}
+
+
+footer{
+    padding: 2rem 0;
+}
