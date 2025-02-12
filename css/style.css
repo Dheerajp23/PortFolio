@@ -307,4 +307,120 @@ button {
   width: 100%;
 }
 
+.active-btn {
+  background-color: #ff0000 !important;
+  color: #ffeded !important;
+}
+
+.wrap-3 {
+  padding: 4rem 0;
+}
+.wrap-3 .heading {
+  text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+}
+.wrap-3 .heading p {
+  font-size: 20px;
+  margin: 0.5rem 0;
+}
+.wrap-3 .heading h2 {
+  font-size: 3rem;
+}
+.wrap-3 .work-buttons {
+  margin: 2rem 0;
+}
+.wrap-3 .work-buttons .work-btn {
+  width: 70%;
+  background-color: #1f1c1c;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  border-right: 1px solid #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.wrap-3 .work-buttons .work-btn:hover {
+  background-color: #fff;
+  color: #171515;
+}
+.wrap-3 .work-buttons :nth-child(1) {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.wrap-3 .work-buttons :nth-child(4) {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-right: none;
+}
+.wrap-3 .works {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  height: 550px;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 1rem;
+}
+.wrap-3 .works .work-item {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  position: relative;
+}
+.wrap-3 .works .work-item .work-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  aspect-ratio: 1/1;
+}
+.wrap-3 .works .work-item .work-info {
+  position: absolute;
+  left: 0;
+  padding: 0.5rem 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #10011d;
+}
+.wrap-3 .works .work-item .work-info p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+}
+.wrap-3 .works .work-item .work-info-2 {
+  position: absolute;
+  left: 0;
+  padding: 0.5rem 0;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 11;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  cursor: none;
+  background-color: #10011d;
+}
+.wrap-3 .works .work-item .work-info-2 p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+}
+.wrap-3 .works .work-item:hover .work-info {
+  transition: all 1s ease;
+  visibility: visible;
+  opacity: 1;
+  bottom: 0;
+}
+.wrap-3 .works .work-item:hover .work-info-2 {
+  transition: all 1s ease;
+  visibility: visible;
+  opacity: 1;
+}
+
 /*# sourceMappingURL=style.css.map */
