@@ -12,7 +12,7 @@
 header {
   color: #fff;
   line-height: 2.5rem;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   width: 1440px;
   margin: 0 auto;
 }
@@ -26,15 +26,26 @@ header .logo h1 {
 }
 header nav ul {
   border: 1px solid #1f1c1c;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem;
+  border-top-width: 2px;
+  border-top-color: #b10e45;
+  border-bottom-color: rgb(12, 12, 182);
+  border-bottom-width: 2px;
 }
 header nav ul li {
   margin-left: 0.5rem;
 }
 header nav ul li a {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 10px 20px;
   color: inherit;
+}
+header .btn:hover {
+  transition: all 0.3s ease;
+  background: linear-gradient(to right, #ffad06, #ff105f);
 }
 header .btn {
   background: linear-gradient(to right, #ff105f, #ffad06);
@@ -43,10 +54,6 @@ header .btn {
   font-size: 1.2rem;
   border-radius: 1rem;
   cursor: pointer;
-}
-header .btn:hover {
-  transition: all 0.3s ease;
-  background: linear-gradient(to right, #ffad06, #ff105f);
 }
 header .btnMode {
   background: none;
@@ -71,6 +78,7 @@ header .btnMode:hover {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -111,6 +119,24 @@ button {
 
 .gap-2 {
   gap: 2rem;
+}
+
+.hr {
+  margin: 8rem 0;
+  height: 2px;
+  background-color: #1f1c1c;
+}
+
+.my4 {
+  margin: 2rem 0;
+}
+
+.my2 {
+  margin: 1rem 0;
+}
+
+.my1 {
+  margin: 0.5rem 0;
 }
 
 .col-1 {
@@ -193,6 +219,92 @@ button {
 
 .align-center {
   align-items: center;
+}
+
+.wrap-1 {
+  padding: 6rem 0;
+  text-align: center;
+}
+.wrap-1 .wrap-1-img {
+  width: 8rem;
+  height: auto;
+  object-fit: cover;
+}
+.wrap-1 h2 {
+  font-style: 1.5rem bold;
+  margin: 1rem 0;
+  margin-bottom: 2rem;
+}
+.wrap-1 p {
+  font-size: 4rem;
+}
+.wrap-1 .btn-cv {
+  background-color: #fff;
+  color: #000;
+  padding: 20px 40px;
+  font-size: 1rem;
+  border-radius: 1.8rem;
+  cursor: pointer;
+}
+.wrap-1 .btn-hire {
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  color: #000;
+  padding: 20px 40px;
+  font-size: 1rem;
+  border-radius: 1.8rem;
+  cursor: pointer;
+  color: #fff !important;
+}
+.wrap-1 .wrap-1-btn {
+  margin-top: 2rem;
+}
+
+.wrap-2 {
+  margin: 6rem 0;
+}
+.wrap-2 .wrap-2-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.wrap-2 .heading {
+  text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+}
+.wrap-2 .heading p {
+  font-size: 20px;
+  margin: 0.5rem 0;
+}
+.wrap-2 .heading h2 {
+  font-size: 3rem;
+}
+.wrap-2 .education {
+  text-align: left;
+}
+.wrap-2 .education p {
+  font-weight: 500;
+}
+.wrap-2 .education .education-items {
+  min-height: 210px;
+  padding: 1.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+}
+.wrap-2 .education .education-items h4 {
+  font-size: 1.2rem;
+}
+.wrap-2 .education .education-items p {
+  font-size: 0.9rem;
+}
+.wrap-2 .icon {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 0.5rem;
+  height: 3rem;
+  width: 3rem;
+}
+.wrap-2 .icon .icon-img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

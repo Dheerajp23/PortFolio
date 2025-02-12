@@ -1,12 +1,19 @@
 const body = document.querySelector('.body');
-const change = document.querySelector('.btn');
+const change = document.querySelector('.btnMode');
+const mode = document.querySelector('.mode');
 
 
 change.addEventListener('click', function(){
     body.classList.toggle('dark');
     if(body.classList.contains('dark')){
-        change.textContent = 'Light Mode';
+        mode.classList.remove('fa-moon');
+        mode.classList.add('fa-sun');
+        change.style.backgroundColor = 'white';
+        mode.style.color = 'orange';
     }else{
-        change.textContent = 'Dark Mode';
+        mode.classList.remove('fa-sun')
+        mode.classList.add('fa-moon')
+        mode.style.color = 'white';
+        change.style.backgroundColor = 'transparent'
     }
 })
