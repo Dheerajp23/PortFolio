@@ -1,0 +1,81 @@
+.dark {
+    background-color: #100f0f;
+    color: #fff;
+}
+
+.light {
+    background-color: #fff;
+    color: #100f0f;
+}
+
+
+
+
+header {
+    .logo{
+        #programmer{
+            height: 48px;
+            width: 48px;
+        }
+        h1 {
+            font-size: 1.75rem;
+            margin-left: 1rem;
+        }
+    }
+    color: #fff;
+    line-height: 2.5rem;
+    padding: 1rem 0;
+    width: 1440px;
+    margin: 0 auto;
+
+    
+
+    nav {
+        ul {
+            border: 1px solid #1f1c1c;
+            border-radius: 1rem;
+
+            li {
+                margin-left: 0.5rem;
+
+                a {
+                    font-size: 1.5rem;
+                    padding: 10px 20px;
+                    color: inherit;
+
+                }
+
+            }
+
+        }
+    }
+
+.btn{
+    background:linear-gradient(to right, #ff105f, #ffad06);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.btn:hover{
+    transition: all 0.3s ease;
+    background: linear-gradient(to right, #ffad06, #ff105f);
+    
+}    
+.btnMode{
+    background: none;
+    border: 1px solid #1f1c1c;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.btnMode:hover{
+    transition: all 0.8s ease;
+    background: #ffffff;
+    color: #000
+}
+
+}

@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+.dark {
+  background-color: #100f0f;
+  color: #fff;
+}
+
+.light {
+  background-color: #fff;
+  color: #100f0f;
+}
+
+header {
+  color: #fff;
+  line-height: 2.5rem;
+  padding: 1rem 0;
+  width: 1440px;
+  margin: 0 auto;
+}
+header .logo #programmer {
+  height: 48px;
+  width: 48px;
+}
+header .logo h1 {
+  font-size: 1.75rem;
+  margin-left: 1rem;
+}
+header nav ul {
+  border: 1px solid #1f1c1c;
+  border-radius: 1rem;
+}
+header nav ul li {
+  margin-left: 0.5rem;
+}
+header nav ul li a {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  color: inherit;
+}
+header .btn {
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+header .btn:hover {
+  transition: all 0.3s ease;
+  background: linear-gradient(to right, #ffad06, #ff105f);
+}
+header .btnMode {
+  background: none;
+  border: 1px solid #1f1c1c;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+header .btnMode:hover {
+  transition: all 0.8s ease;
+  background: #ffffff;
+  color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.body {
+  font-family: "Nunito Sans", sans-serif;
+  color: #dbcece;
+  background-color: #11001f;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[class*=col-] {
+  padding: 0 10px;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.col-1 {
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
+}
+
+.col-2 {
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+.col-5 {
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+}
+
+.col-8 {
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+
+.col-11 {
+  flex: 0 0 91.666667%;
+  max-width: 91.666667%;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-1 {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
