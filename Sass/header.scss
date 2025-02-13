@@ -1,6 +1,7 @@
 .dark {
-    background-color: #100f0f;
-    color: #fff;
+    background-color: #fff !important;
+    color: #000 !important;
+    
 }
 
 .light {
@@ -32,10 +33,13 @@ header {
     color: #fff;
     line-height: 2.5rem;
     padding: 1.5rem 0;
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
 
-    
+    .navbtn{
+        text-align: right;
+        display: none;
+    }
 
     nav {
         ul {
@@ -53,17 +57,30 @@ header {
                 margin-left: 0.5rem;
 
                 a {
-                    font-size: 1.2rem;
-                    padding: 10px 20px;
-                    color: inherit;
+                    font-size: 1rem;
+                    padding: 10px 15px;
+                    color: #fff;
 
+
+                }
+                a:hover{
+                    color: #ff0055;
                 }
 
             }
 
         }
     }
-
+.nav-btn{
+    background: none;
+    border: 1px solid #1f1c1c;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-align: right;
+}
 
 .btn:hover{
     transition: all 0.3s ease;
@@ -86,6 +103,31 @@ header {
     transition: all 0.8s ease;
     background: #ffffff;
     color: #000
+}
+
+.show{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 107px;
+    background-color: #200238;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease;
+    ul{
+        width: 100%;
+        border: none;
+        flex-direction: column;
+        justify-content: end;
+        align-items: end;
+        li{
+            
+            margin: 0.5rem 0;
+        }
+
+
+    }
 }
 
 }

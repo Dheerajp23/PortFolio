@@ -12,19 +12,24 @@ const btnreact = document.querySelector('.btn-react');
 const btnjs = document.querySelector('.btn-js');
 const workbtn = document.querySelectorAll('.work-btn');
 
+const navbtn = document.querySelector('.nav-btn');
+const show = document.querySelector('.show');
+
+const links= document.querySelectorAll('.links')
+
+
 change.addEventListener('click', function(){
-    body.classList.toggle('dark');
-    if(body.classList.contains('dark')){
-        mode.classList.remove('fa-moon');
-        mode.classList.add('fa-sun');
-        change.style.backgroundColor = 'white';
-        mode.style.color = 'orange';
-    }else{
-        mode.classList.remove('fa-sun')
-        mode.classList.add('fa-moon')
-        mode.style.color = 'white';
-        change.style.backgroundColor = 'transparent'
-    }
+  
+   if(mode.classList.contains('fa-moon')){
+   
+    mode.classList.remove('fa-moon')
+    mode.classList.add('fa-sun')
+   }
+   else if(mode.classList.contains('fa-sun')){
+   
+   mode.classList.remove('fa-sun')
+   mode.classList.add('fa-moon')
+}
 })
 
 
@@ -81,4 +86,29 @@ btnjs.addEventListener('click', function(){
          item.style.display = 'none';
     }
     })
+})
+
+
+navbtn.addEventListener('click', function(){
+   if(show.style.visibility === 'hidden' || show.style.visibility === ''){  
+       show.style.visibility = 'visible';
+       show.style.opacity = '1';
+       show.style.height = 'fit-content';
+       navbtn.style.color = 'red'
+
+    }else{  
+        show.style.visibility = 'hidden';
+       show.style.opacity = '0';
+       show.style.transition = 'all 0.5s ease-in-out'; 
+       navbtn.style.color = 'white';
+    }
+})
+
+links.forEach(function (link) {
+    link.addEventListener('click',function(){
+        show.style.visibility = 'hidden';
+        show.style.opacity = '0';
+        show.style.transition = 'all 0.5s ease-in-out'; 
+        navbtn.style.color = 'white';
+    })   
 })
