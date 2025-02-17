@@ -141,3 +141,24 @@ document.querySelector('#contact-form').addEventListener('submit', function (e) 
     }).showToast();
     document.querySelector('#contact-form').reset();
 })
+
+
+document.querySelector('.btn-cv').addEventListener('click', function () {
+    const pdf = document.querySelector('#cvpdf');
+    pdf.click();
+    
+    
+    
+    Toastify({
+        text: "CV Downloaded Successfully",
+        duration: 5000,
+        close: true,
+        gravity: "top", 
+        position: "right", 
+        stopOnFocus: true, 
+        style: {
+            background: "linear-gradient(to right,rgb(98, 0, 255),rgb(0, 4, 255))",
+        },
+    }).showToast();
+
+})
