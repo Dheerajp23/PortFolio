@@ -51,8 +51,17 @@
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
         }
+        :nth-child(1):hover {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
 
         :nth-child(4) {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-right: none;
+        }
+        :nth-child(4):hover {
             border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;
             border-right: none;
