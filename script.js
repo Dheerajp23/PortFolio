@@ -162,3 +162,7 @@ document.querySelector('.btn-cv').addEventListener('click', function () {
     }).showToast();
 
 })
+
+document.querySelector('.btn-hire').addEventListener('click', function (e){
+    document.querySelector('#contact').scrollIntoView();
+})
