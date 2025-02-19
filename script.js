@@ -166,3 +166,27 @@ document.querySelector('.btn-cv').addEventListener('click', function () {
 document.querySelector('.btn-hire').addEventListener('click', function (e){
     document.querySelector('#contact').scrollIntoView();
 })
+
+window.addEventListener('scroll',function(){
+    if(window.scrollY > 80){
+        document.querySelector('header').style.borderBottom = '1px solid #ccc';
+        document.querySelector('header').style.margin = '0 auto';
+        document.querySelector('header').style.maxWidth = '100%';
+        document.querySelector('header').style.lineHeight = '30px';
+        document.querySelector('header').style.backgroundColor = '#11001f';
+        document.querySelector('header').style.transition = 'all 0.5s ease-in-out';
+        document.querySelector('.home-ul').style.border = 'none';
+
+    }
+    else if(window.scrollY < 80){
+        document.querySelector('header').style.backgroundColor = 'transparent';
+        document.querySelector('header').style.lineHeight = '2.5rem';
+        document.querySelector('header').style.borderBottom = 'none';
+        document.querySelector('header').style.maxWidth = '1440px';
+        document.querySelector('.home-ul').style.border = ' 1px solid #1f1c1c';
+        document.querySelector('.home-ul').style.transition = 'all 0.3s ease-in';
+        document.querySelector('.home-ul').style.borderTop = '2px solid #b10e45';
+        document.querySelector('.home-ul').style.borderBottom = '2px solid rgb(12, 12, 182)';
+
+    }
+})

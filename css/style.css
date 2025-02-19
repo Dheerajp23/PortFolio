@@ -10,6 +10,9 @@
 }
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   color: #fff;
   line-height: 2.5rem;
   padding: 1.5rem 0;
@@ -139,6 +142,7 @@ html {
   font-family: "Nunito Sans", sans-serif;
   color: #dbcece;
   background-color: #11001f;
+  position: relative;
 }
 
 .container {
