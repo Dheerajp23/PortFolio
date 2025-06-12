@@ -15,7 +15,8 @@ const workbtn = document.querySelectorAll('.work-btn');
 const navbtn = document.querySelector('.nav-btn');
 const show = document.querySelector('.show');
 
-const links = document.querySelectorAll('.links')
+const links = document.querySelectorAll('.links');
+const time=document.querySelector(".time");
 
 
 change.addEventListener('click', function () {
@@ -145,12 +146,12 @@ document.querySelector('#contact-form').addEventListener('submit', function (e) 
 
 document.querySelector('.btn-cv').addEventListener('click', function () {
     const pdf = document.querySelector('#cvpdf');
-    pdf.click();
+    pdf.click()
     
     
     
     Toastify({
-        text: "CV Downloaded Successfully",
+        text: "CV downloading initiated",
         duration: 5000,
         close: true,
         gravity: "top", 
@@ -190,3 +191,11 @@ window.addEventListener('scroll',function(){
 
     }
 })
+
+
+setTimeout(() => {
+ let date = new Date().toDateString();
+ time.innerHTML = `${date} ,All rights Reserved`;
+ console.log("time");
+ 
+}, 2000);
